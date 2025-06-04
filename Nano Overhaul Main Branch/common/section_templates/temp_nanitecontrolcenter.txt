@@ -1,0 +1,46 @@
+ship_section_template = {
+	key = "NANITE_CONTROL_CENTER_MID_KEY"
+	ship_size = nanitecontrolcenter
+	fits_on_slot = mid
+	entity = "gatebuilder_01_mothership_section_entity"
+	
+	icon = "GFX_ship_part_core_mid"
+	
+	ai_weight = {
+		factor = 1
+	}
+	
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}	
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}	
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	
+	
+}

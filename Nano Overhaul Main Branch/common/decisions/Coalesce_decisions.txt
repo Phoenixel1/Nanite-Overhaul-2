@@ -1,0 +1,25 @@
+#DELETE ON RELEASE
+#Made so I could test recall effect, on release will be automatically started by tradition
+decision_Recall = {
+	owned_planets_only = yes
+	sound = event_robo_01
+	icon = decision_colony_settlement
+	
+	potential = {
+		owner = { has_tradition = tr_nanotech_finish }
+		is_capital = yes
+		
+	}
+	resources = {
+		category = decisions
+	}
+	effect = {
+		owner = {
+			country_event = { id = Recall.100 } 
+		}
+	}
+	ai_weight = {
+		weight = 0
+	}
+
+}
