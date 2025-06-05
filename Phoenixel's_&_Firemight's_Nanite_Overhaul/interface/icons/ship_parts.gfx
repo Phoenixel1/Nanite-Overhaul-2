@@ -1,7 +1,0 @@
-spriteTypes = {
-	spriteType = { 
-		name = "GFX_PHNX_nanokiller"
-		textureFile = "gfx/interface/icons/ship_parts/PHNX_nanokiller.dds"
-	}
-}
-
