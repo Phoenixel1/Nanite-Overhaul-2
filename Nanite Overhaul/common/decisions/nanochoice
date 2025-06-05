@@ -1,0 +1,26 @@
+# Tide choice
+
+decision_embrace_the_tide = {
+	owned_planets_only = yes
+
+	enactment_time = 160
+	resources = {
+		category = decisions
+		cost = {
+			nanites = 5000
+		}
+	}
+
+	potential = {
+		is_planet_class = pc_nanotech
+	    owner = {
+			has_ascension_perk = ap_the_tide
+		}
+	}
+
+	effect = {
+		add_modifier = {
+			modifier = nanite_swarm_modifier
+		}
+	}
+}

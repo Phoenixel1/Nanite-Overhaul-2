@@ -1,0 +1,34 @@
+namespace = nanoarc
+
+
+#############LITHOID SPIES############
+
+
+#STAGE 1 - A home away from home
+
+fleet_event = {
+	id = nanoarc.1
+	title = "local please"
+	desc = "local please"
+	picture = GFX_PHNX_nanokiller
+	show_sound = event_dig_site
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	
+	after = {
+		from = { set_site_progress_locked = no }
+	}
+
+	
+	option = {
+		name = "continue"
+		small_artifact_reward = yes
+	}
+}

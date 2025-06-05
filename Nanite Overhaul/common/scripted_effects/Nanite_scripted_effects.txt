@@ -1,0 +1,19 @@
+#Removes Pops from Recall Centers
+Nanite_Recall_effect = {
+	every_owned_pop_job = {
+		limit = {
+			has_job_type = recalled_drone
+		}
+		kill_assigned_pop_amount = {
+			percentage = 1
+		}
+	}
+	every_owned_pop_job = {
+		limit = {
+			has_job_type = recalled_indiv
+		}
+		kill_assigned_pop_amount = {
+			percentage = 1
+		}
+	}
+}

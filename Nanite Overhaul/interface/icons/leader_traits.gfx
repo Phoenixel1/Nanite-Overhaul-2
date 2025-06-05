@@ -1,0 +1,26 @@
+spriteTypes = {
+	spriteType = {
+		name = "PHNX_nanomachine"
+		texturefile = "gfx/interface/icons/traits/leader_trait_icons/PHNX_nanomachine.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "building_nanite_enrichment_center"
+		texturefile = "gfx/interface/icons/buildings/Building_nanite_enrichment_center.dds"             # TEXTURE FILE WILL NOT REC TILL USED (I do not know why)
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "trait_nanobot"
+		textureFile = "gfx/interface/icons/traits/nanobot_trait.dds" 
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		
+	}
+}
