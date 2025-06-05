@@ -1,6 +1,0 @@
-nanites_deficit = { #I made it REALLY BAD NOW
-	custom_tooltip = nanites_deficit_tooltip
-	pop_bonus_workforce_mult = -0.25
-	empire_size_mult = 1
-	planet_pop_assembly_reduction = 0.8
-}
