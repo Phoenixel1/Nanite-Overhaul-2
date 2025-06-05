@@ -1,7 +1,0 @@
-namespace=nanomod
-
-country_event = {
-    id = nanomod.1
-    title = nanomod.1.name
-    
-}
