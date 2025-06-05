@@ -1,0 +1,33 @@
+d_nanite_mod = {
+	resources = {
+		category = orbital_mining_deposits
+		produces = {
+			nanites = 50
+		}
+	}
+	station = shipclass_research_station
+	is_for_colonizable = no
+	
+	drop_weight = {
+	    weight = 0
+	}
+
+
+}
+
+d_nanite2_mod = {
+	resources = {
+		category = orbital_mining_deposits
+		produces = {
+			nanites = 12
+		}
+	}
+	station = shipclass_research_station
+	is_for_colonizable = no
+	
+	drop_weight = {
+	    weight = 0
+	}
+
+
+}

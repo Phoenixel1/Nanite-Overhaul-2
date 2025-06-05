@@ -1,0 +1,48 @@
+d_nanotech_devastation = { #x10 blocker production
+	icon = d_buried_lithoids
+
+	time = 360
+
+	is_for_colonizable = yes
+	category = deposit_cat_blockers
+
+	potential = { always = no }
+	can_be_cleared = {
+		custom_tooltip = {
+			exists = owner
+			owner = {
+				NOT = {
+					has_tradition = tr_nanotech_adopt
+				}
+			}
+		fail_text = nanites_cant_do_this
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { NOT = { has_tradition = tr_nanotech_adopt } }
+		}
+		planet_max_districts_add = -1
+		habitability_ceil_add = -0.05
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+
+	resources = {
+		category = deposit_blockers
+		produces = {
+			nanites = 5 #I edited this-Firemight
+		}
+		cost = {
+			energy = 2500
+		}
+	}
+
+	ai_weight = {
+		weight = 2
+	}
+}

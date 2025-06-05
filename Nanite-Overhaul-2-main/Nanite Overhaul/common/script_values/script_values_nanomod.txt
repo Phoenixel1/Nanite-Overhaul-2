@@ -1,0 +1,5 @@
+#nanomod script values
+
+nanobot_build_speed_mult = {
+
+}

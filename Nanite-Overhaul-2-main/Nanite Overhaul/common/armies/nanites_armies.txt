@@ -1,0 +1,216 @@
+# Machine Gestalt Army
+# Low cost, weak
+nanite_assault_1 = {
+	damage = 1
+	health = 0.5
+	has_morale = no
+	morale_damage = 2.00
+	collateral_damage = 4.0
+	war_exhaustion = 0.1
+	time = 10
+	has_species = yes
+
+	icon = GFX_army_type_machine_assault
+
+	resources = {
+		category = armies
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = no
+				}
+			}
+			nanites = 20
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			nanites = 20
+			mult = @mineral_to_food_cost_ratio
+		}
+
+		upkeep = {
+			energy = 0
+		}
+	}
+
+	potential_country = {
+		is_machine_empire = yes
+		owner = { has_tradition = tr_nanotech_4 }
+	}
+	potential = {
+		from = {
+			has_trait = "trait_machine_unit"
+		}
+	}
+
+	ai_weight = {
+		base = 0
+	}
+}
+#Individual machine armies
+#High Health, each a specific focus
+individual_nanite_assault_1 = { #High Damage, low collateral
+	damage = 2
+	health = 2.00
+	morale = 1.00
+	morale_damage = 1.25
+	collateral_damage = 0.5
+	war_exhaustion = 0.5
+	time = 90
+	has_species = yes
+
+	icon = GFX_army_type_machine_assault
+
+	resources = {
+		category = armies
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = no
+				}
+			}
+			nanites = 200
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			nanites = 200
+			mult = @mineral_to_food_cost_ratio
+		}
+
+	}
+
+	potential_country = {
+		is_individual_machine = yes
+		owner = { has_tradition = tr_nanotech_4 }
+	}
+	potential = {
+		from = {
+			has_trait = "trait_machine_unit"
+		}
+	}
+
+	show_tech_unlock_if = {
+		is_individual_machine = yes
+	}
+
+	prerequisites = { "tech_assault_armies" }
+
+	ai_weight = {
+		base = 100
+		modifier = {
+			set = 0
+			has_technology = tech_adaptive_combat_algorithms
+		}
+	}
+}
+
+individual_nanite_assault_2 = { #High morale damage, med-high collateral
+	damage = 1.75
+	health = 5
+	morale = 1.5
+	morale_damage = 3
+	collateral_damage = 2.5
+	war_exhaustion = 1.0
+	time = 120
+	has_species = yes
+
+	icon = GFX_army_type_machine_assault
+
+	resources = {
+		category = armies
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = no
+				}
+			}
+			nanites = 400
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			nanites = 400
+			mult = @mineral_to_food_cost_ratio
+		}
+
+		upkeep = {
+			energy = 2
+		}
+	}
+
+	potential_country = {
+		is_individual_machine = yes
+		owner = { has_tradition = tr_nanotech_4 }
+	}
+	potential = {
+		from = {
+			has_trait = "trait_machine_unit"
+		}
+	}
+
+	prerequisites = { "tech_adaptive_combat_algorithms" }
+
+	ai_weight = {
+		base = 100
+	}
+}
+
+individual_nanite_assault_3 = { #Incredibly high collateral damage, good everything, high cost
+	damage = 5.0
+	health = 12.0
+	morale = 2.0
+	morale_damage = 3
+	collateral_damage = 8.0
+	war_exhaustion = 4.0
+	time = 500
+	has_species = no
+
+	icon = GFX_army_type_machine_assault
+
+	resources = {
+		category = armies
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = no
+				}
+			}
+			nanites = 2000
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			nanites = 2000
+			mult = @mineral_to_food_cost_ratio
+		}
+
+		upkeep = {
+			energy = 8
+		}
+	}
+
+	potential_country = {
+		is_individual_machine = yes
+		owner = { has_tradition = tr_nanotech_4 }
+	}
+
+	prerequisites = { "tech_biomechanics" }
+
+	ai_weight = {
+		base = 50
+	}
+}

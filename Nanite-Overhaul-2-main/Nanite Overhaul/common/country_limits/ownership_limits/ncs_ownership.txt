@@ -1,0 +1,7 @@
+
+
+default = {
+	ship_of_size_limits = {
+		nanitecontrolcenter_ship_limit
+	}
+}
