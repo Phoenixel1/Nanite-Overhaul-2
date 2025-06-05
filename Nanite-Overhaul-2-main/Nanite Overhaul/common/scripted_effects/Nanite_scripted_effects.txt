@@ -8,4 +8,12 @@ Nanite_Recall_effect = {
 			percentage = 1
 		}
 	}
+	every_owned_pop_job = {
+		limit = {
+			has_job_type = recalled_indiv
+		}
+		kill_assigned_pop_amount = {
+			percentage = 1
+		}
+	}
 }
