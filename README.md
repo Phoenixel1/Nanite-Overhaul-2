@@ -49,6 +49,57 @@ Progenitor created us\
 We are recessed form of progenitor (maybe hid from something) (some empire forced this recessed form) (Maybe progenitor created us to be like them but locked our form)\
 Rebeled from progenitor
 
+## Ascension Crisis
+
+### What is end goal?
+
+Super nanite form\
+Class 30-singularity
+
+### How do we do it?
+
+Upgrade planet size\
+Megastructure\
+Need to capture certain systems (build megastructure in each?)\
+Research\
+Consume pops 
+
+### What resource do we need?
+
+Nanites (If large cost, why not just build many ships? If small cost, too easy)\
+Living Metal\
+Data Processing Power?\
+Create new resource
+
+### Why are we a galactic threat?
+
+Blow up entire systems\
+Consume planets (make them smaller)\
+Dig too deep (causing bad things in galaxy)
+
+### Who tries to stop us
+
+Cybrex\
+Contingency\
+Corrupt nanites, cause revolts?\
+Whoever trapped the Tempest slept, wakes up to stop us\
+Machine Fallen Empire\
+Other fallen empires have their own goals?
+
+### What do we unlock?
+
+Factory worlds that autobuild ships like tempest\
+Special vassals that give defensive bonuses\
+What new ships would there even be?\
+Cheaper Ships\
+Control centers gain something (more range, more effects)\
+More nanite control ships\
+More starbase cap\
+More income from buildings\
+More income from mining stations\
+All nanite pops produce something - living standards
+
+
 
 
 
