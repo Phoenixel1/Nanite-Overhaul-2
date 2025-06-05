@@ -9,7 +9,10 @@ country_event = { # Looped Event to begin Recalling Drones
 		export_trigger_value_to_variable = {
 			trigger = num_assigned_jobs
 			parameters = {
-				job = recalled_drone
+				OR = {
+					job = recalled_drone
+					job = recalled_indiv
+				}
 			}
 			variable = recall_result
 		}
