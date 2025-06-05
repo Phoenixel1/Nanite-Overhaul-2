@@ -1,7 +1,0 @@
-ap_the_tide = { 
-	modifier = {
-		country_starbase_capacity_add = 15
-		country_starbase_capacity_mult = .20
-		empire_size_mult = -.100
-	}
-}
