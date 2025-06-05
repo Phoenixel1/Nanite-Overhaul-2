@@ -1,0 +1,9 @@
+component_set = {
+	key = "ship_offspring_aura_components"
+	icon = "GFX_ship_part_sensor"
+	icon_frame = 1
+	required_component_set = yes
+	is_core_component_set = yes
+	affects_target_type = yes
+}
+

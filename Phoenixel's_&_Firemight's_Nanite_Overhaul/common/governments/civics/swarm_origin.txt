@@ -1,0 +1,14 @@
+# Ima be so real this origin is never getting made lol.
+#origin_nano_swarm = {
+#	is_origin = yes
+
+origin_nano_swarm = {
+	is_origin = yes
+
+	starting_colony = pc_nanotech
+
+	habitability_preference = pc_nanotech
+	
+
+
+}

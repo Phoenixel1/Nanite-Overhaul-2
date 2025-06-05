@@ -1,0 +1,75 @@
+nanite_outlook = {
+	icon = "GFX_offspring_aura_sb"
+	construction_days = 180
+
+	potential = {
+		exists = owner
+		owner = {
+			owner = { has_tradition = tr_nanotech_finish }
+		}
+		is_space_citadel = no
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_starport"
+			has_starbase_size >= starbase_starport
+		}
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 50
+			nanites = 200
+		}
+
+		upkeep = {
+			energy = 2
+			nanites = 4
+		}
+	}
+	equipped_component = "STARBASE_NANITE_OUTLOOK"
+
+	ai_weight = {
+		weight = 10
+	}
+}
+
+Nanite_Fleet_Command = {
+	icon = "GFX_starbase_recruitment_office"
+	construction_days = 360
+
+	potential = {
+		is_space_citadel = no
+		exists = owner
+		owner = {
+			has_tradition = tr_nanotech_5
+		}
+	}
+
+
+
+	country_modifier = {
+		command_limit_add = 10
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 50
+			nanites = 200
+		}
+		upkeep = {
+			nanites = 2
+		}
+	}
+
+#	show_in_tech = "tech_xeno_linguistics"
+
+	
+
+	ai_weight = {
+		weight = 0
+	}
+}

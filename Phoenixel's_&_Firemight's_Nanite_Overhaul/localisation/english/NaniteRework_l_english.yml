@@ -1,0 +1,69 @@
+﻿l_english:
+
+ #decisions
+ decision_Recall:0 "Recall Drones" #Delete on release
+ decision_Recall_desc:0 "Send an order for drones to begin recalling off-planet" #Delete on release
+ 
+
+ #buildings
+ building_nanite_humidifier:0 "Nanite Humidifier"
+ building_nanite_humidifier_desc:0 "Nanites work to progress the formation of various kinds of exotic gases"
+ building_nanite_crystallifier:0 "Nanite Crystallifier"
+ building_nanite_crystallifier_desc:0 "Precise development and control by nanites allow the automated development of rare crystals"
+ building_nanite_coalescing_center:0 "Nanite Coalescing Center"
+ building_nanite_coalescing_center_desc:0 "Here our swarm gives direction to newly arriving nanites on the planet"
+ building_recall_center:0 "Nanite Recall Center"
+ building_recall_center_desc:0 "Speedily returns massive amounts of nanites to their base forms and prepares them for other uses"
+ 
+ #colonytypes
+ col_nanofortress_world:0 "Nanofortress World"
+ col_nanofortress_world_desc:0 "Nanites reinforce defenders and structures alike to defend from any invader"
+ col_nanofortress_world_tt:0 "Nanites reinforce defenders and structures alike to defend from any invader"
+ col_nanotech_world_tt:0 "A planet elevated to the pinacle of existance through complete nanification."
+ mod_planet_buildings_nanites_upkeep_mult:0 "Building Nanite Upkeep"
+
+ 
+ #Armies
+ nanite_assault_1:0 "Locust Swarm"
+ nanite_assault_1_desc:0 "These nanites forsake any type of form, instead forming massive groups to mass assualt enemy positions"
+ individual_nanite_assault_1:0 "Nanite Precise Combat Army"
+ individual_nanite_assault_1_desc:0 "Nanite forms and augments allow supieror resistance to damage and the ability to more accurately do more, such atomic precision allows for minimal collatoral damage"
+ individual_nanite_assault_2:0 "Advanced Nanite Warforms"
+ individual_nanite_assault_2_desc:0 "The sight of an approaching swarm is terrifying, through augmenting nanites to support these terror tactics, they do great damage to enemy morale"
+ individual_nanite_assault_3:0 "Nanite Devestators" 
+ individual_nanite_assault_3_desc:0 "Giant swarms of nanites with a single purpose, to destroy all before them"
+ 
+ # Jobs
+ job_recalled_drone: "Recalled Drone"
+ job_recalled_drone_plural: "Recalled Drones"
+ job_recalled_drone_desc: "These drones are currently preparing to move off-world"
+ mod_job_recalled_drone_add:0 "$job_recalled_drone$ Jobs"
+ job_swarm_coordinator_gestalt:0 "Swarm Coordinator"
+ job_swarm_coordinator_gestalt_plural:0 "Swarm Coordinators"
+# job_swarm_coordinator:0 "Swarm Coordinator"
+ job_swarm_coordinator_indiv:0 "Swarm Coordinator"
+ job_swarm_coordinator_indiv_plural:0 "Swarm Coordinators"
+ job_swarm_coordinator_gestalt_desc:0 "These drones ensure that arriving nanites can be directed into forms to best serve the swarm's will."
+# job_swarm_coordinator_desc:0 "Our nanites help direct new arrivals take on effective forms to live planetside."
+ job_swarm_coordinator_indiv_desc:0 "Coordinators help new arrivals take effective forms, find jobs, and adapt to living planetside."
+ mod_job_swarm_coordinator_gestalt_add:0 "$job_swarm_coordinator_gestalt$ Jobs"
+# mod_job_swarm_coordinator_add:0 "$job_swarm_coordinator$ Jobs"
+ mod_job_swarm_coordinator_indiv_add:0 "$job_swarm_coordinator_indiv$ Jobs"
+
+ mod_planet_metallurgists_nanites_upkeep_add:0 "$nanites_with_icon$ Upkeep per 100 $job_foundry_plural_with_icon$"
+ mod_planet_artisans_nanites_upkeep_add:0 "$nanites_with_icon$ Upkeep per 100 $job_artisan_plural_with_icon$"
+ 
+ #Ships
+ ship_graphics_nanitecontrolcenter:0 "Nanite Control Ship"
+ nanitecontrolcenter:0 "Nanite Control Ship"
+ nanitecontrolcenter_plural:0 "Nanite Control Ships"
+ SHIP_GRAPHICS_NANITECONTROLCENTER_DESC:0 "An adaptive battlecruiser formed from self-replicating nanites. Acting as the center of nanite movements, these ships provide vital direction to all ships under their command and provide support to them"
+ NANITE_CONTROL_CENTER_MID_KEY:0 "Support"
+ NANITE_AURA:0 "Nanite Oversight"
+ nanitecontrolcenter_cap:0 "Nanite Control Ship"
+
+ #Starbase
+ sm_nanite_outlook:0 "Nanite Control Center"
+ sm_nanite_outlook_desc:0 "From here, we can direct any and all nanite ships in the system"
+ sm_Nanite_Fleet_Command:0 "Nanite Fleet Command"
+ sm_Nanite_Fleet_Command_desc:0 "By the setting up a network of nanites across our empire, sending and receiving data to our nanite fleets, the operational capacity of both our commanders and control ships can be improved"
