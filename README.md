@@ -9,6 +9,8 @@ LOCALIZATION
 
 mod_job_recalled_indiv_add needs localization
 
+nanite mothership missing some localization
+
 ------------------------------------------------------------------------------
 
 TRAITS
