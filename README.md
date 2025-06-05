@@ -20,3 +20,7 @@ BUILDINGS
 Recall center does not work for individualistic machines - done
 
 ---------------------------------------------------------------------------
+
+WEAPONS
+
+Get Nanite Weapons working
