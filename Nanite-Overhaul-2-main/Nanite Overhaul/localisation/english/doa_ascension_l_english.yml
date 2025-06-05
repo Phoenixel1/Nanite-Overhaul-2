@@ -5,7 +5,7 @@
  
  nanite_ascension_mothership:0 "Nanite Mothership"
  nanite_ascension_mothership_plural:0 "Nanite Motherships"
- 
+ nanite_ascension_mothership_cap:0 "Mothership"
  
  NANITE_STRIKECRAFT_SET:0 "Nanite Fighters"
  NANITE_STRIKECRAFT_SET_DESC:0 ""
