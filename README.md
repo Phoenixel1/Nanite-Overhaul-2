@@ -52,7 +52,9 @@ Rebeled from progenitor
 ### What is end goal?
 
 Super nanite form\
-Class 30-singularity
+Class 30-singularity\
+System destroying starkiller-like superweapon (nicol-dyson beam from gigastructures?)\
+Birch world
 
 ### How do we do it?
 
@@ -73,7 +75,8 @@ Create new resource
 
 Blow up entire systems\
 Consume planets (make them smaller)\
-Dig too deep (causing bad things in galaxy)
+Dig too deep (causing bad things in galaxy)\
+Galactic wide effects
 
 ### Who tries to stop us
 
