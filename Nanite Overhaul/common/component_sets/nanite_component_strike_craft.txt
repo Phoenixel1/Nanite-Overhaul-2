@@ -1,0 +1,6 @@
+component_set = {
+    key = NANITE_STRIKECRAFT_SET
+	icon = GFX_ship_part_strike_craft_scout_1
+	icon_frame = 1
+}
+
