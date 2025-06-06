@@ -7,28 +7,21 @@ ship_uses_nanitecontrolcenter_components = {
 }
 
 
-ship_uses_battleship_reactors = {
+
+ship_uses_titan_reactors = {
 	OR = {
 		# Regular Ships
-		is_ship_size = battleship
-		# Offspring Ships
-		is_ship_size = offspring_battleship
-		# Nanotech Ships
-		is_ship_size = nanite_interdictor
+		is_ship_size = titan
+		# First Contact Ships
+		is_ship_size = payback_warship
+		# Cosmogenesis Ships
+		is_ship_size = cosmo_crisis_battlecruiser
 		# Biological Ships
-		is_ship_size = stinger_stage_1
-		is_ship_size = stinger_stage_2
-		is_ship_size = stinger_stage_3
-		is_ship_size = large_fallen_stinger
-		# Biological Offspring Ships
-		is_ship_size = offspring_stinger_stage_1
-		is_ship_size = offspring_stinger_stage_2
-		is_ship_size = offspring_stinger_stage_3
+		is_ship_size = bio_titan
 		#Nanite
 		is_ship_size = nanitecontrolcenter
 	}
 }
-
 
 
 ship_uses_cruiser_components = {

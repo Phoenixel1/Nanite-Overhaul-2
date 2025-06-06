@@ -12,27 +12,83 @@ ship_section_template = {
 	
 	
 	component_slot = {
-		name = "TITANIC_01"
+		name = "TITAN_01"
 		template = "invisible_titanic_fixed"
 		locatorname = "xl_gun_01"
-	}	
-	component_slot = {
-		name = "LARGE_GUN_02"
-		template = "large_turret"
-		locatorname = "medium_gun_02"
 	}
 	component_slot = {
-		name = "LARGE_GUN_02"
-		template = "large_turret"
-		locatorname = "medium_gun_02"
+		name = "TORPEDO_01"
+		template = "invisible_missile_turret"
+		locatorname = "xl_gun_01"
 	}
+	component_slot = {
+		name = "TORPEDO_02"
+		template = "invisible_missile_turret"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TORPEDO_03"
+		template = "invisible_missile_turret"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "TORPEDO_04"
+		template = "invisible_missile_turret"
+		locatorname = "xl_gun_01"
+	}
+
 	component_slot = {
 		name = "STRIKE_CRAFT_01"
 		template = "large_strike_craft"
-		rotation = 90
-		locatorname = "strike_craft_locator_01"
-	}	
-	large_utility_slots = 6
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_04"
+		template = "large_strike_craft"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_05"
+		template = "large_strike_craft"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_06"
+		template = "large_strike_craft"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_07"
+		template = "large_strike_craft"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_08"
+		template = "large_strike_craft"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_09"
+		template = "large_strike_craft"
+		locatorname = "xl_gun_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_10"
+		template = "large_strike_craft"
+		locatorname = "xl_gun_01"
+	}
+
+	large_utility_slots = 12
 	aux_utility_slots = 2
 	
 	

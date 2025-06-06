@@ -55,13 +55,13 @@
  mod_planet_artisans_nanites_upkeep_add:0 "$nanites_with_icon$ Upkeep per 100 $job_artisan_plural_with_icon$"
  
  #Ships
- ship_graphics_nanitecontrolcenter:0 "Nanite Control Ship"
- nanitecontrolcenter:0 "Nanite Control Ship"
- nanitecontrolcenter_plural:0 "Nanite Control Ships"
+ ship_graphics_nanitecontrolcenter:0 "Nanite Mothership"
+ nanitecontrolcenter:0 "Nanite Mothership"
+ nanitecontrolcenter_plural:0 "Nanite Motherships"
  SHIP_GRAPHICS_NANITECONTROLCENTER_DESC:0 "An adaptive battlecruiser formed from self-replicating nanites. Acting as the center of nanite movements, these ships provide vital direction to all ships under their command and provide support to them"
  NANITE_CONTROL_CENTER_MID_KEY:0 "Support"
  NANITE_AURA:0 "Nanite Oversight"
- nanitecontrolcenter_cap:0 "Nanite Control Ship"
+ nanitecontrolcenter_cap:0 "Mothership"
 
  #Starbase
  sm_nanite_outlook:0 "Nanite Command Center"
