@@ -44,14 +44,11 @@
  mod_job_recalled_indiv_add:0 "$job_recalled_drone$ Jobs"
  job_swarm_coordinator_gestalt:0 "Swarm Coordinator"
  job_swarm_coordinator_gestalt_plural:0 "Swarm Coordinators"
-# job_swarm_coordinator:0 "Swarm Coordinator"
  job_swarm_coordinator_indiv:0 "Swarm Coordinator"
  job_swarm_coordinator_indiv_plural:0 "Swarm Coordinators"
  job_swarm_coordinator_gestalt_desc:0 "These drones ensure that arriving nanites can be directed into forms to best serve the swarm's will."
-# job_swarm_coordinator_desc:0 "Our nanites help direct new arrivals take on effective forms to live planetside."
  job_swarm_coordinator_indiv_desc:0 "Coordinators help new arrivals take effective forms, find jobs, and adapt to living planetside."
  mod_job_swarm_coordinator_gestalt_add:0 "$job_swarm_coordinator_gestalt$ Jobs"
-# mod_job_swarm_coordinator_add:0 "$job_swarm_coordinator$ Jobs"
  mod_job_swarm_coordinator_indiv_add:0 "$job_swarm_coordinator_indiv$ Jobs"
 
  mod_planet_metallurgists_nanites_upkeep_add:0 "$nanites_with_icon$ Upkeep per 100 $job_foundry_plural_with_icon$"
@@ -67,7 +64,5 @@
  nanitecontrolcenter_cap:0 "Nanite Control Ship"
 
  #Starbase
- sm_nanite_outlook:0 "Nanite Control Center"
- sm_nanite_outlook_desc:0 "From here, we can direct any and all nanite ships in the system"
- sm_Nanite_Fleet_Command:0 "Nanite Fleet Command"
- sm_Nanite_Fleet_Command_desc:0 "By the setting up a network of nanites across our empire, sending and receiving data to our nanite fleets, the operational capacity of both our commanders and control ships can be improved"
+ sm_nanite_outlook:0 "Nanite Command Center"
+ sm_nanite_outlook_desc:0 "By the setting up a network of nanites, sending and receiving data to our nanite fleets, we can direct them and improve the operational capacity of both our commanders and control ships"
