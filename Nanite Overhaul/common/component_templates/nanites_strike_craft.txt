@@ -60,7 +60,7 @@ strike_craft_component_template = {
 	weapon_type = instant # Not PD, unlike normal strike craft
 	projectile_gfx = "strike_craft_laser_3"
 	
-	size_restriction = { nanite_swarmer nanite_interdictor nanite_ascension_mothership nanitecontrolcenter }
+	size_restriction = { nanite_swarmer nanite_interdictor nanitecontrolcenter }
 
 	component_set = "NANITE_STRIKECRAFT_SET"
 	icon = "GFX_ship_part_strike_craft_scout_1"
