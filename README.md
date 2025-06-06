@@ -21,7 +21,7 @@ BUILDINGS
 
 WEAPONS
 
-Get Nanite Weapons working
+Get Nanite Weapons working-done
 
 # Ideas
 
