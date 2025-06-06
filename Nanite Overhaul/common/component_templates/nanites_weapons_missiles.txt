@@ -1,0 +1,60 @@
+@attack_range = 10
+@engagement_range = 125
+@launch_time = 2
+@speed1 = 550
+@speed2 = 600
+@speed3 = 650
+@speed4 = 700
+@speed5 = 725
+@count = 8
+@regen = 0.5
+
+@power1 = -20
+@power2 = -34
+@power3 = -45
+@power4 = -59
+@power5 = -73
+
+
+
+
+
+weapon_component_template = {
+	key = "NANITE_ENERGY_TORPEDO"
+	size = torpedo
+	icon = GFX_ship_part_space_whale_weapon_1
+	icon_frame = 1
+	type = missile
+	prio_projectile = yes #No idea what this does
+#	power = -22
+	
+#	missile_speed = 350
+#	missile_evasion = 1
+#	missile_shield = 0
+#	missile_armor = 0
+#	missile_health = 20
+#	missile_retarget_range = 120
+	
+#	damage = { min = 100 max = 150 }
+#	windup = { min = 2 max = 7 }
+#	total_fire_time = 10
+#	range = 120
+#	accuracy = 1
+#	hull_damage = 1
+#	armor_damage = 2
+#	armor_penetration = 0
+#	shield_damage = 0.75
+#	shield_penetration = 0
+#	tracking = 0.5
+	
+	firing_arc = 25.0
+	min_range = 45.0
+#	size_restriction = { nanite_swarmer nanite_interdictor nanite_ascension_mothership }
+	
+	component_set = "NANITE_ENERGY_TORPEDO"
+	prerequisites = { "tech_nanite_weaponry" }
+	projectile_gfx = "gatebuilder_torpedo"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_type_energy }
+	ai_tag_weight = 10
+}
