@@ -147,98 +147,6 @@ weapon_component_template = {
 	}
 }
 
-strike_craft_component_template = {
-	key = "NANITE_STRIKE_CRAFT"
-	size = LARGE
-	entity = "gatebuilder_01_strikecraft_entity"
-	icon = GFX_ship_part_strike_craft_scout_1
-	icon_frame = 1
-
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = 60
-		}
-	}
-
-	power = -60
-
-	count = 10
-	regeneration_per_day = @regen
-	launch_time = 1.0
-
-	damage = { min = 10 max = 12 } # hits hard but slow
-	cooldown = 4
-	range = 20
-	engagement_range = 120
-	accuracy = 1.0
-	tracking = 1.0
-
-	health = 100
-	armor = 50
-	shield = 50
-	evasion = 0.80
-
-	speed = 600
-	rotation_speed = 0.2
-	acceleration = 0.5
-
-	shield_damage = 1.0
-	shield_penetration = 1
-	armor_penetration = 0.66
-
-	ship_behavior = "bombers_behavior"
-
-	weapon_type = instant # Not PD, unlike normal strike craft
-	projectile_gfx = "strike_craft_laser_3"
-	
-	size_restriction = { nanite_swarmer nanite_interdictor nanite_ascension_mothership }
-
-	component_set = "NANITE_STRIKECRAFT_SET"
-	icon = "GFX_ship_part_strike_craft_scout_1"
-	icon_frame = 1
-	tags = { weapon_type_strike_craft }
-	
-	prerequisites = { "tech_nanite_weaponry" }
-}
-
-weapon_component_template = {
-	key = "NANITE_ENERGY_MISSILE"
-	size = torpedo
-	icon = GFX_ship_part_space_whale_weapon_1
-	icon_frame = 1
-	type = missile
-	power = -22
-	
-	missile_speed = 350
-	missile_evasion = 1
-	missile_shield = 0
-	missile_armor = 0
-	missile_health = 20
-	missile_retarget_range = 120
-	
-	damage = { min = 100 max = 150 }
-	windup = { min = 2 max = 7 }
-	total_fire_time = 10
-	range = 120
-	accuracy = 1
-	hull_damage = 1
-	armor_damage = 2
-	armor_penetration = 0
-	shield_damage = 0.75
-	shield_penetration = 0
-	tracking = 0.5
-	
-	size_restriction = { nanite_swarmer nanite_interdictor nanite_ascension_mothership }
-	
-	component_set = "NANITE_ENERGY_MISSILE_SET"
-	prerequisites = { "tech_nanite_weaponry" }
-	projectile_gfx = "gatebuilder_torpedo"
-	tags = { weapon_type_energy }
-	ai_tags = { weapon_type_energy }
-	ai_tag_weight = 10
-}
-
 weapon_component_template = {
 	key = "NANITE_BEAM"
 	size = titanic
@@ -247,7 +155,8 @@ weapon_component_template = {
 	type = instant
 	prio_projectile = yes
 	power = -200
-	
+	prio_projectile = yes
+
 	damage = { min = 1 max = 9999 }
 	windup = { min = 77 max = 115 }
 	total_fire_time = 68
@@ -265,7 +174,7 @@ weapon_component_template = {
 	
 	size_restriction = { nanite_swarmer nanite_interdictor nanite_ascension_mothership }
 	
-	
+	tags = { weapon_role_artillery t_slot }
 	prerequisites = { "tech_nanite_weaponry" }
 	component_set = "NANITE_BEAM_SET"
 	projectile_gfx = "gatebuilder_titan_weapon"

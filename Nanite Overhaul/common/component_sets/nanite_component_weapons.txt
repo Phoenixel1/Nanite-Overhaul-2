@@ -1,11 +1,5 @@
 component_set = {
-    key = NANITE_STRIKECRAFT_SET
-	icon = GFX_ship_part_strike_craft_scout_1
-	icon_frame = 1
-}
-
-component_set = {
-    key = NANITE_ENERGY_MISSILE_SET
+    key = NANITE_ENERGY_TORPEDO
 	icon = GFX_ship_part_space_whale_weapon_1
 	icon_frame = 1
 }
