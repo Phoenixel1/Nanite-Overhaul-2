@@ -6,7 +6,7 @@ Any changes please discuss in the discord.
 
   a) Origin
 
-  b) small slot on swarmers
+  b) small slot on swarmers - Done
 
   c) Nanite Pop assembly trait
 
