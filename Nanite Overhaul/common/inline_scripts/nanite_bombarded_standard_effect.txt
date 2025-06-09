@@ -1,0 +1,28 @@
+owner = { 
+	add_static_war_exhaustion = {
+		attacker = from
+		location = root
+		value_for_planet_destruction = 1
+	}
+}
+
+clear_colonized_planet_nanite = yes
+
+if = {
+	limit = {
+		habitable_structure = yes
+	}
+	if = {
+		limit = { merg_is_habitat = yes }
+		spawn_habitat_cracker_effect = yes
+	}
+	else = {
+		spawn_ringworld_cracker_effect = yes
+		change_pc = pc_ringworld_habitable_damaged
+
+	}
+}
+else = {
+	hidden_effect = { clear_deposits = yes }	
+	$EFFECT$ = yes
+}
