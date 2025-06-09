@@ -1,0 +1,31 @@
+namespace = nanite_bombarded_event
+#On planet bombarded
+planet_event = {
+	id = nanite_bombarded_event.100
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		planet_devastation >= 100
+		OR = {
+			has_orbital_bombardment_stance = selective
+			has_orbital_bombardment_stance = indiscriminate
+			has_orbital_bombardment_stance = armageddon
+			has_orbital_bombardment_stance = pox
+			has_orbital_bombardment_stance = raiding
+			has_orbital_bombardment_stance = seed_bombing
+			has_orbital_bombardment_stance = voidworm_invasion
+			has_orbital_bombardment_stance = voidworm_invasion_crisis
+			has_orbital_bombardment_stance = frenzied_voidworm_invasion
+			has_orbital_bombardment_stance = behemoth_invasion
+		}
+		colonizable_planet = yes
+		is_planet_class = pc_nanotech
+	}
+	immediate = {		
+		inline_script = {
+			script = nanite_bombarded_standard_effect
+			EFFECT = nanite_bombarded_planet_effect
+		}
+	}
+}
