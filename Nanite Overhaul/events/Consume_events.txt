@@ -1,0 +1,65 @@
+namespace = Recall
+country_event = { # Looped Event to begin Recalling Drones
+	id = Recall.100
+	hide_window = yes
+	is_triggered_only = yes
+
+	#Now count pops
+	immediate = {
+		if = {
+			limit = { is_machine_empire = yes }
+			export_trigger_value_to_variable = {
+				trigger = num_assigned_jobs
+				parameters = {
+					job = recalled_drone
+				}
+				variable = recall_result
+			}	
+		}
+		if = {
+			limit = { is_individual_machine = yes }
+			export_trigger_value_to_variable = {
+				trigger = num_assigned_jobs
+				parameters = {
+					job = recalled_indiv
+				}
+				variable = recall_extra
+			}
+		}
+	}
+	
+
+	after = {
+		add_resource = {
+			nanites = 25 #Reward for each pop
+			mult = recall_result
+		}	
+		add_resource = {
+			nanites = 25 #Reward for each pop
+			mult = recall_extra
+		}
+		hidden_effect = {
+			set_variable = {
+				which = recall_result
+				value = 0
+			}
+			set_variable = {
+				which = recall_extra
+				value = 0
+			}
+			country_event = { id = Recall.110 } # Kill
+			country_event = { id = Recall.100 days = 30 } #Repeat in 30 days
+		}
+	}
+}
+#Taking from machine_age_events_2, paperclips
+
+country_event = {
+	id = Recall.110
+	hide_window = yes
+	is_triggered_only = yes
+	
+	after = {
+		Nanite_Recall_effect = yes #This tells workers to recall
+	}
+}
