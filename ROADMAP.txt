@@ -2,12 +2,24 @@ This is a rough roadmap that needs to be fleshed out.
 
 Any changes please discuss in the discord.
 
-1.) Balance changes to account for incoming bigger changes
+1) Implement new features
 
-2.) Remake features - Nanite worlds, Nanite ahrvesters, tooltips and resources pipelines
+  a) Origin
 
-3.) New origins, traits, civics etc 
+  b) small slot on swarmers
 
-4.) Start work on crisis path and any other large vents. 
+  c) Nanite Pop assembly trait
 
-5.) Precursor
+  d) Planet
+
+  e) Nanite planets become habitable barren worlds at 100% devestation
+
+2) Balance discussion
+
+3) Test run
+
+4) Balance discusssion
+
+5) Release mod
+
+6) New feature discussion
