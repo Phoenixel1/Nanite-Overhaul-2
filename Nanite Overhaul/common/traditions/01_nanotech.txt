@@ -120,6 +120,7 @@ tr_nanotech_5 = {
 		}
 		hidden_effect = {
 			country_event = { id = nanomod.1}
+			country_event = { id = nanomod.3}
 			if = {
 				limit = {
 					is_gestalt = yes
