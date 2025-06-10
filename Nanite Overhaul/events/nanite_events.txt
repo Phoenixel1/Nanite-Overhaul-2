@@ -142,10 +142,27 @@ country_event = {
 }
 
 #pops get nano trait
-#country_event = {
-#	#id = nanomod.3   # to be made. Putting here to reserve
-	#hide_window = yes # Had to put this here otherwise the game would throw an event with no context on unpause daily. Why is  beyond me. will remove note once event is made
-#}
+country_event = {
+	id = nanomod.3
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		every_owned_pop_group = {
+			limit = {
+				is_same_species = root
+				species = {
+					has_nanobot_trait = no
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_nanobot
+			}
+#			species = { save_event_target_as = psionic_species }
+		}
+	}
+}
 
 #nanobot trait ship build speed modifier # This event checks for the total amount of nanobot pops and then multiplies that number by the trait build speed static modifier to provide the empire buff.
 country_event = {
