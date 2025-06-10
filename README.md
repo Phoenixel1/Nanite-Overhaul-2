@@ -47,6 +47,10 @@ Progenitor created us\
 We are recessed form of progenitor (maybe hid from something) (some empire forced this recessed form) (Maybe progenitor created us to be like them but locked our form)\
 Rebeled from progenitor
 
+### What is our reward
+
+Nanite Ecumonopolis world
+
 ## Ascension Crisis
 
 ### What is end goal?
