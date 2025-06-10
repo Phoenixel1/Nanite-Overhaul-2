@@ -1,13 +1,14 @@
 # nano trait - fire on tr 5 similar to leader unless you can fix finisher. 
 
 trait_nanobot = {
+	
+	
 	icon = trait_nanobot # this does exist. Path is correct and it shows up in game. 
 	initial = no
-    category = robotic
+   	category = robotic
 	cost = 0
 	randomized = no
-	allowed_archetypes = { ROBOT MACHINE } #fucking what? _ _ _ _ ?!?!?!?
-
+	allowed_archetypes = { ROBOT MACHINE } 
 	species_potential_add = {
 		always = no
 	}
@@ -20,10 +21,11 @@ trait_nanobot = {
 		pop_housing_usage_mult = -0.5
 		planet_jobs_worker_produces_mult = 0.2             # not done. Trad based # what did she mean by this
 		pop_environment_tolerance = 0.3                     # I really dislike how this is spaced out and I feel like it should include local somehow but I do not know how to do this
-	    planet_jobs_kill_yourself
-		
-		
-		# ok so. on action ---> check for new pop/planet conqured/planet col ---> fires event that would check for total pops with the trait and multiply that by 0.005
-		# this is never getting finished. # I am giving on on the ship build speed buff I'm prob just gonna add it into a tradition this shit is to annoying to do and quite frankly makes no god damn sense.
+	}
+	triggered_planet_pop_group_modifier_for_species = {
+		potential = {
+			has_nanobot_trait = yes
+		}
+		bonus_pop_growth = @plantoid_budding_rate
 	}
 }
