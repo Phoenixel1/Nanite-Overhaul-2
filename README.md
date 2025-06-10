@@ -29,15 +29,12 @@ Get Nanite Weapons working-done
 
 ### Why Start on nanite world?
  
-Your species created nanite world? Can you make more?\
-Tempest created the nanite world (explains why are guaranteed hab also nanite worlds)\
-Old nanite empire fell, dead nanite world, need to become nanites to resurrect it
+Your species created nanite world? Currently cannot make more - lost knowledge\
+Von numen (no guaranteed), 1 nearby nanite world, 1 nearby tomb world\
+We fell in some way
 
 ### Why fastpath to nanites?
 
-Surounded by nanites\
-Secretly are already nanites - need to activate nanite bodies\
-Desire to get planet systems working\
 Already are proto-nanites
 
 ### Why does our species exist
