@@ -1,0 +1,119 @@
+nanites_digsite_1 = {
+	desc = "test"
+	picture = GFX_PHNX_nanokiller
+	stages = 5
+	max_instances = 999
+	allow = {
+		exists = leader
+		
+	}
+
+	visible = {
+		default_site_visible_trigger = yes
+		has_origin = origin_nano_swarm
+	}
+
+	on_visible = {
+		country_event = {
+			id = nanoarc.110
+		}
+	}
+
+	stage = { 
+		difficulty = -9
+		icon = GFX_archaeology_runes_B1
+		event = nanoarc.200
+	}
+
+	stage = {
+		difficulty = -9
+		icon = GFX_archaeology_runes_B2
+		event = nanoarc.210
+	}
+
+	stage = {
+		difficulty = -9
+		icon = GFX_archaeology_runes_B3
+		event = nanoarc.220
+	}
+
+	stage = {
+		difficulty = -9
+		icon = GFX_archaeology_runes_B4
+		event = nanoarc.230
+	}
+
+	stage = {
+		difficulty = -9
+		icon = GFX_archaeology_runes_B5
+		event = nanoarc.290
+	}
+
+
+
+	on_roll_failed = {
+		from = {
+			standard_archaeological_site_on_roll_failed = { RANDOM_EVENTS = space_station_random_events }
+		}
+	}
+}
+
+nanites_digsite_9 = {
+	desc = "test"
+	picture = GFX_PHNX_nanokiller
+	stages = 5
+	max_instances = 999
+	allow = {
+		exists = leader
+		
+	}
+
+	visible = {
+		default_site_visible_trigger = yes
+		has_origin = origin_nano_swarm
+	}
+
+	on_visible = {
+		country_event = {
+			id = nanoarc.710
+		}
+	}
+
+	stage = { 
+		difficulty = -9
+		icon = GFX_archaeology_runes_B1
+		event = nanoarc.800
+	}
+
+	stage = {
+		difficulty = -9
+		icon = GFX_archaeology_runes_B2
+		event = nanoarc.810
+	}
+
+	stage = {
+		difficulty = -9
+		icon = GFX_archaeology_runes_B3
+		event = nanoarc.820
+	}
+
+	stage = {
+		difficulty = -9
+		icon = GFX_archaeology_runes_B4
+		event = nanoarc.830
+	}
+
+	stage = {
+		difficulty = -9
+		icon = GFX_archaeology_runes_B5
+		event = nanoarc.890
+	}
+
+
+
+	on_roll_failed = {
+		from = {
+			standard_archaeological_site_on_roll_failed = { RANDOM_EVENTS = space_station_random_events }
+		}
+	}
+}

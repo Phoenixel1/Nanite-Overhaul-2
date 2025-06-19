@@ -1,0 +1,516 @@
+namespace = nanoarc
+
+# Game Start
+event = { 
+	id = nanoarc.100
+	hide_window = yes
+	is_triggered_only = yes
+	
+	
+	immediate = {
+		set_global_flag = setup_nanite_arc
+		every_country = {
+			limit = { has_origin = origin_nano_swarm }
+			country_event = { id = nanoarc.101 }
+		}
+	}
+}
+
+country_event = {
+	id = nanoarc.101
+	hide_window = yes
+
+	is_triggered_only = yes
+
+#	trigger = {
+#		has_origin = origin_shoulders_of_giants
+#		NOT = { has_country_flag = origin_shoulders_of_giants_initialised }
+#	}
+
+	immediate = {
+		capital_scope = {
+			if = {
+				limit = {
+					has_district = district_nexus
+				}
+				remove_district = district_nexus
+			}
+			while = {
+				count = 3
+				if = {
+					limit = {
+						has_district = district_generator
+					}
+					remove_district = district_generator
+				}
+			}
+			while = {
+				count = 5
+				if = {
+					limit = {
+						has_district = district_mining
+					}
+					remove_district = district_mining
+				}
+			}
+			while = {
+				count = 3
+				if = {
+					limit = {
+						has_district = district_farming
+					}
+					remove_district = district_farming
+				}
+			}
+			while = {
+				count = 4
+				add_district_and_planet_size_if_needed_effect = {
+					district = district_nexus_1
+				}
+			}
+			add_zone = {
+				district = district_nexus_1
+				zone = zone_energy_nexus
+				zone_slot = 0
+				replace = yes
+			}
+			while = {
+				count = 5
+				add_district_and_planet_size_if_needed_effect = {
+					district = district_nexus_2
+				}
+			}
+			add_zone = {
+				district = district_nexus_2
+				zone = zone_minerals_nexus
+				zone_slot = 0
+				replace = yes
+			}
+#			while = {
+#				count = 2
+#				add_district_and_planet_size_if_needed_effect = {
+#					district = district_nexus_3
+#				}
+#			}
+#			add_zone = {
+#				district = district_nexus_3
+#				zone = zone_food
+#				zone_slot = 0
+#				replace = yes
+#			}
+			add_building = building_sentinel_posts
+		}
+		capital_scope = {
+			solar_system = {
+				random_system_planet = {
+					limit = {
+						is_homeworld = no
+						is_planet_class = pc_nanotech
+					}
+					create_archaeological_site = nanites_digsite_1
+				}
+			}
+		}
+		set_global_flag = setup_nanite_arc3
+	}
+}
+country_event = {
+	id = nanoarc.110
+	title = nanoarc.110.title
+	desc = "nanoarc.110.desc"
+	picture = GFX_evt_alien_nature
+	show_sound = event_alien_nature
+	location = ROOT
+	fire_only_once = yes
+	option = {
+		name = nanoarc.110.a
+	}
+}
+
+#STAGE 1 - A home away from home
+
+fleet_event = {
+	id = nanoarc.200
+	title = "local please"
+	desc = "local please"
+	picture = GFX_PHNX_nanokiller
+	show_sound = event_dig_site
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	
+	option = {
+		name = "continue"
+		small_artifact_reward = yes
+	}
+}
+fleet_event = {
+	id = nanoarc.210
+	title = "local please"
+	desc = "local please"
+	picture = GFX_PHNX_nanokiller
+	show_sound = event_dig_site
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	
+	option = {
+		name = "continue"
+		small_artifact_reward = yes
+	}
+}
+fleet_event = {
+	id = nanoarc.220
+	title = "local please"
+	desc = "local please"
+	picture = GFX_PHNX_nanokiller
+	show_sound = event_dig_site
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	
+	option = {
+		name = "continue"
+		small_artifact_reward = yes
+	}
+}
+fleet_event = {
+	id = nanoarc.230
+	title = "local please"
+	desc = "local please"
+	picture = GFX_PHNX_nanokiller
+	show_sound = event_dig_site
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+#	immediate = {
+#		from = { set_site_progress_locked = yes }
+#	}
+
+	
+#	after = {
+#		from = { set_site_progress_locked = no }
+#	}
+
+	
+	option = {
+		name = "continue"
+		small_artifact_reward = yes
+	}
+}
+fleet_event = {
+	id = nanoarc.290
+	title = "local please"
+	desc = "local please"
+	picture = GFX_PHNX_nanokiller
+	show_sound = event_dig_site
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	
+
+	
+	option = {
+		name = "continue"
+		small_artifact_reward = yes
+		
+		owner = {
+			hidden_effect = {
+				country_event = { id = nanoarc.500 } #Spawns Last Baol System
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = nanoarc.500
+	hide_window = yes
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = nano_system_discovered
+		set_country_flag = nano_system
+
+		if = {
+			limit = {
+				any_system_within_border = { has_star_flag = precursor_1 }
+			}
+			random_system_within_border = {
+#				limit = { has_star_flag = precursor_1 }
+				save_event_target_as = precursor_spawn_system
+			}
+		}
+		else = {
+			random_system_within_border = {
+				save_event_target_as = precursor_spawn_system
+			}
+		}
+		event_target:precursor_spawn_system = {
+			spawn_system = {
+				min_distance = 10
+				max_distance = 30
+				max_jumps = 0
+				initializer = "NaniteProgenitor_system"
+			}
+			if = {
+				limit = { last_created_system = { NOT = { has_hyperlane_to = prev } } }
+				add_hyperlane = {
+					from = this
+					to = last_created_system
+				}
+			}
+			else = {
+				add_extra_hyperlane_to_spawned_system_effect = yes
+			}
+		}
+		country_event = { id = nanoarc.510 days = 2 }
+	}
+}
+
+country_event = {
+	id = nanoarc.510
+	title = "nanoarc.510.name"
+	desc = "nanoarc.510.desc"
+	picture = GFX_evt_federation_fleet
+	location = event_target:vultaumar
+
+	is_triggered_only = yes
+
+	immediate = {
+		random_system = {
+			limit = { has_star_flag = vultaumar }
+			save_event_target_as = vultaumar
+			root = { set_visited = prev }
+		}
+	}
+
+	option = {
+		name = "precursor.100.a"
+	}
+}
+
+
+# Found Home
+
+country_event = {
+	id = nanoarc.710
+	title = cara_home_main.title
+	desc = "colony.1.desc"
+	picture = GFX_evt_alien_nature
+	show_sound = event_alien_nature
+	location = ROOT
+	fire_only_once = yes
+	option = {
+		name = colony.1.a
+	}
+}
+
+# Archology Home
+fleet_event = {
+	id = nanoarc.800
+	title = "local please"
+	desc = "local please"
+	picture = GFX_PHNX_nanokiller
+	show_sound = event_dig_site
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	
+	option = {
+		name = "continue"
+		small_artifact_reward = yes
+	}
+}
+fleet_event = {
+	id = nanoarc.810
+	title = "local please"
+	desc = "local please"
+	picture = GFX_PHNX_nanokiller
+	show_sound = event_dig_site
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	
+	option = {
+		name = "continue"
+		small_artifact_reward = yes
+	}
+}
+fleet_event = {
+	id = nanoarc.820
+	title = "local please"
+	desc = "local please"
+	picture = GFX_PHNX_nanokiller
+	show_sound = event_dig_site
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	
+	option = {
+		name = "continue"
+		small_artifact_reward = yes
+	}
+}
+fleet_event = {
+	id = nanoarc.830
+	title = "local please"
+	desc = "local please"
+	picture = GFX_PHNX_nanokiller
+	show_sound = event_dig_site
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+#	immediate = {
+#		from = { set_site_progress_locked = yes }
+#	}
+
+	
+#	after = {
+#		from = { set_site_progress_locked = no }
+#	}
+
+	
+	option = {
+		name = "continue"
+		small_artifact_reward = yes
+	}
+}
+fleet_event = {
+	id = nanoarc.890
+	title = "local please"
+	desc = "local please"
+	picture = GFX_PHNX_nanokiller
+	show_sound = event_dig_site
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	
+
+	
+	option = {
+		name = "continue"
+		small_artifact_reward = yes
+		
+		owner = {
+			hidden_effect = {
+				country_event = { id = nanoarc.900 } #Gives reward options
+			}
+		}
+	}
+}
+
+country_event = { #Reward event
+	id = nanoarc.900
+	title = "local please"
+	desc = "local please"
+	picture = GFX_evt_fleet_from_surface
+	show_sound = event_yellow_alert
+	location = from
+	is_triggered_only = yes
+	immediate = {
+		owner = {
+			add_tradition = tr_nanotech_adopt
+		}
+	}
+
+	
+	option = {
+		trigger = {
+			is_machine_empire = yes
+		}
+		name = nanoarc.900.a
+		owner = {
+			hidden_effect = {
+				country_event = { id = nanoarc.910 } #Gives reward
+			}
+		}
+	}
+	option = {
+		trigger = {
+			is_individual_machine = yes
+		}
+		name = nanoarc.900.a
+		owner = {
+			hidden_effect = {
+				country_event = { id = nanoarc.915 } #Gives reward
+			}
+		}
+	}
+}
+country_event = {
+	id = nanoarc.910
+	title = nanoarc.910.name
+	desc = nanoarc.910.desc
+
+	show_sound = event_screams
+	picture = GFX_evt_fear_of_the_dark
+	show_sound = evn_fc_disunity_origin
+
+	is_triggered_only = yes
+
+	location = fromfrom
+	option = {
+		name = nanoarc.910.a
+		force_add_civic = civic_machine_terminator
+		add_resource = { unity = 5000 }
+	}
+}
+country_event = {
+	id = nanoarc.915
+	title = nanoarc.915.name
+	desc = nanoarc.915.desc
+
+	show_sound = event_screams
+	picture = GFX_evt_fear_of_the_dark
+	show_sound = evn_fc_disunity_origin
+
+	is_triggered_only = yes
+
+	location = fromfrom
+	option = {
+		name = nanoarc.915.a
+		force_add_civic = civic_fanatic_purifiers
+		add_resource = { unity = 5000 }
+		clear_ethos = yes
+		country_add_ethic = ethic_fanatic_xenophobe
+		country_add_ethic = ethic_militarist
+	}
+	option = {
+		name = nanoarc.915.b
+		trigger = {
+			OR = {
+				has_ethic = ethic_spiritualist
+				has_ethic = ethic_fanatic_spiritualist
+			}
+		}
+		force_add_civic = civic_fanatic_purifiers
+		add_resource = { unity = 5000 }
+		clear_ethos = yes
+		country_add_ethic = ethic_fanatic_xenophobe
+		country_add_ethic = ethic_spiritualist
+	}
+}
